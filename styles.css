@@ -941,7 +941,7 @@ h2 {
      
      #promoMagnetos {    
         background-size: cover !important;
-        background: url(./img/bgROmobile.jpg);
+        background: url(./img/bgROmediano.jpg);
     }
 
     #promoMagnetos h1 {
@@ -1067,7 +1067,7 @@ h2 {
 
 }
 
-@media (max-width: 1024px) {
+@media (min-width: 769px) and (max-width: 1024px) {
     .container, #acordeon, .containerProducto, .containerNosotros, .containerContacto {
         display: block;
     }
