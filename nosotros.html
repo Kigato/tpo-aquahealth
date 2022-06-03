@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="./img/iso.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ce07addd42.js" crossorigin="anonymous"></script>
+    <title>aquahealth | Tratamiento de agua</title>
+</head>
+<body>
+    <div class="containerNosotros">
+        <!-- MENU -->
+        <nav class="flex flexCenter" id="menu">
+            <!-- LOGO EN MENU -->
+            <div class="logo">
+                <a href="./Index.html">
+                    <img src="./img/iso.png" alt=""><span id="logoAqua">aqua</span><span id="logoHealth">health</span>
+                </a>
+                <span id="menuHamb">
+                    <i class="fa-solid fa-bars" id="menuAbrir" onclick="abrirHamb()"></i>
+                </span>
+            </div>
+            <!-- MENU CENTRAL -->
+            <div class="menuCentral">
+                <ul class="listStyle flex flexCenter">
+                    <li><a href="Index.html" >Home</a></li>
+                    <li id="menuProductos">
+                        <a href="./productos.html">Productos</a> 
+                        <ul class="listStyle flex flexCenter subMenu">
+                            <li><a href="./productos.html#productosPuri">Filtración</a></li>
+                            <li><a href="./productos.html#productosTrat">Tratamiento Ecológico</a></li>
+                            <li><a href="./productos.html#productosServ">Servicios</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./nosotros.html" class="menuSelec">Nosotros</a></li>
+                    <li><a href="./contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            <!-- MENU MOBILE -->
+            <div class="menuCentral" id="menuMobile">
+                <i class="fa-solid fa-x" id="menuCerrar" onclick="cerrarHamb()"></i>
+                <ul class="listStyle flex flexCenter">
+                    <li><img src="./img/iso.png" alt=""></li>
+                    <li><a href="Index.html">Home</a></li>
+                    <li id="menuProductos">
+                        <span class="flex flexCenter"><a href="./productos.html">Productos</a></span>
+                    </li>
+                    <li><a href="./nosotros.html" class="menuSelec">Nosotros</a></li>
+                    <li><a href="./contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            <!-- MENU DERECHA -->
+            <div class="menuDerecha">
+                <ul class="listStyle flex flexCenter">
+                    <li>
+                        <button id="botonComprar">Comprar</button>
+                    </li>    
+                    <li>
+                        <select name="idioma" id="lang">
+                            <option value="ES">ES</option>
+                            <option value="EN">EN</option>
+                        </select>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- NOSOTROS -->
+        <div class="seccion" id="nosotros">
+            <div id="infoNosotros" class="flex flexCenter">
+                <h1>Aquahealth por Inversiones 2414 c.a.</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora voluptatem hic quae ea animi qui molestias maxime, recusandae nihil a omnis, illo, cum quaerat esse voluptas blanditiis ipsa debitis laudantium? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt deleniti iusto expedita quas earum saepe in ab vero consectetur dolores. Optio earum accusantium dolor et nam fugit, iure impedit vel. Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, quasi quas eveniet nihil vel id recusandae blanditiis numquam libero corrupti sit nulla sunt molestias. Voluptates voluptatibus in beatae consequuntur illo!</p>
+            </div>
+        </div>
+        <!-- FOOTER -->
+        <div class="seccion" id="footer">
+            <div id="footerInfo">
+                <div id="footerMenu">
+                    <ul class="listStyle">
+                        <li><a href="./Index.html">Home</a></li>
+                        <li><a href="./nosotros.html">Nosotros</a></li>
+                        <li><a href="./nosotros.html">Nuestro Compromiso</a></li>
+                    </ul>
+                    <ul class="listStyle">
+                        <li><a href="./productos.html">Filtración</a></li>
+                        <li><a href="./productos.html">Tratamiento Ecológico</a></li>
+                        <li><a href="./productos.html">Servicios</a></li>
+                    </ul>
+                    <ul class="listStyle">
+                        <li><a href="./contacto.html">Contacto</a></li>
+                        <li><a href="./contacto.html">Soporte</a></li>
+                        <li><a href="./contacto.html">Trabajo</a></li>
+                    </ul>  
+                </div>
+                <div id="redes">
+                    <h5>Encuéntranos en</h5>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"> <i class="fa-brands fa-twitter"></i></a>
+                    <div>
+                        <h5>Suscríbete a nuestro newsletter</h5>
+                        <form action="">
+                            <input type="email" placeholder="tu.mail@dominio.com" id="inputNews">
+                            <button id="botonSus">Suscribir</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div id="copyright">
+                <img src="./img/iso.png" alt="">
+                <span id="footerAqua">aqua</span><span id="footerHealth">health</span> | Copyright 2022
+            </div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>

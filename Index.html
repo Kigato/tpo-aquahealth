@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="./img/iso.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ce07addd42.js" crossorigin="anonymous"></script>
+    <title>aquahealth | Tratamiento de agua</title>
+</head>
+<body>
+    <!-- CONTAINER -->
+    <div class="container"> 
+        <!-- MENU -->
+        <nav class="flex flexCenter" id="menu">
+            <!-- LOGO EN MENU -->
+            <div class="logo">
+                <a href="./Index.html">
+                    <img src="./img/iso.png" alt=""><span id="logoAqua">aqua</span><span id="logoHealth">health</span>
+                </a>
+                <span id="menuHamb">
+                    <i class="fa-solid fa-bars" id="menuAbrir" onclick="abrirHamb()"></i>
+                </span>
+            </div>
+            <!-- MENU CENTRAL -->
+            <div class="menuCentral">
+                <ul class="listStyle flex flexCenter">
+                    <li><a href="Index.html" class="menuSelec">Home</a></li>
+                    <li id="menuProductos">
+                        <a href="./productos.html">Productos</a> 
+                        <ul class="listStyle flex flexCenter subMenu">
+                            <li><a href="./productos.html#productosPuri">Filtración</a></li>
+                            <li><a href="./productos.html#productosTrat">Tratamiento Ecológico</a></li>
+                            <li><a href="./productos.html#productosServ">Servicios</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./nosotros.html">Nosotros</a></li>
+                    <li><a href="./contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            <!-- MENU MOBILE -->
+            <div class="menuCentral" id="menuMobile">
+                <i class="fa-solid fa-x" id="menuCerrar" onclick="cerrarHamb()"></i>
+                <ul class="listStyle flex flexCenter">
+                    <li><img src="./img/iso.png" alt=""></li>
+                    <li><a href="Index.html" class="menuSelec">Home</a></li>
+                    <li id="menuProductos">
+                        <span class="flex flexCenter"><a href="./productos.html">Productos</a></span>
+                    </li>
+                    <li><a href="./nosotros.html">Nosotros</a></li>
+                    <li><a href="./contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            <!-- MENU DERECHA -->
+            <div class="menuDerecha">
+                <ul class="listStyle flex flexCenter">
+                    <li>
+                        <button id="botonComprar">Comprar</button>
+                    </li>    
+                    <li>
+                        <select name="idioma" id="lang">
+                            <option value="ES">ES</option>
+                            <option value="EN">EN</option>
+                        </select>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!--SLIDE IFRAME -->
+        <div class="seccion flex flexCenter" id="slide">
+            <iframe src="https://www.youtube.com/embed/ELb6O2sk5-Y?autoplay=1&mute=1&controls=0&modestbranding=1" frameborder="0" allowfullscreen></iframe>
+            <div>
+                <h1>Transforme su agua para mayor provecho</h1> 
+            </div>
+            <div>
+                <a href="./nosotros.html"><button>Conozca más sobre nosotros</button></a>
+            </div>
+            <div id="flecha">
+                <i class="fa-solid fa-chevron-down"></i>
+            </div>
+        </div>
+        <!-- SECCION PURIFICACIÓN -->
+        <div class="seccion" id="purificacion">
+            <a href="./productos.html">
+                <div class="card">
+                    <div class="cardImg"></div>
+                    <h2>Purificación</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas ab beatae veniam, eum quibusdam fugiat ex, minima nisi aut repudiandae quisquam eveniet? Harum corporis et fugiat quibusdam id placeat ut.</p>
+                </div>  
+            </a>
+        </div>
+        <!-- SECCION TRATAMIENTO -->
+        <div class="seccion" id="tratamiento">
+            <a href="./productos.html#productosTrat">
+                <div class="card">
+                    <div class="cardImg"></div>
+                    <h2>Tratamiento Ecológico</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas ab beatae veniam, eum quibusdam fugiat ex, minima nisi aut repudiandae quisquam eveniet? Harum corporis et fugiat quibusdam id placeat ut.</p>
+                </div>
+            </a>
+        </div>
+        <!-- SECCION SERVICIOS -->
+        <div class="seccion" id="servicios">
+            <a href="./productos.html#productosServ">
+                <div class="card">
+                    <div class="cardImg"></div>
+                    <h2>Servicios</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas ab beatae veniam, eum quibusdam fugiat ex, minima nisi aut repudiandae quisquam eveniet? Harum corporis et fugiat quibusdam id placeat ut.</p>
+                </div>
+            </a>
+        </div>
+        <!-- INFORMACIÓN RELEVANTE -->
+        <div class="seccion flex flexCenter" id="infoPurificacion">
+            <i class="fa-solid fa-droplet"></i>
+            <div>
+               <h2>"El agua permite que nuestro organismo realice la mayor parte de sus funciones vitales. Beber agua es fundamental para nuestros órganos"</h2>
+            </div>
+        </div>
+        <!-- PROMO -->
+        <div class="seccion" id="promoMagnetos">
+            <div id="magnetos">
+                <div></div>
+                
+                <div id="magnetosBeneficios" class="flex flexCenter">
+                    <h1>Sistema RO Residencial</h1>
+                    <ul class="listStyle">
+                        <li><h3><i class="fa-solid fa-circle-check"></i>Elimina particulas de sedimento</h3></li>
+                        <li><h3><i class="fa-solid fa-circle-check"></i>Filtra metales</h3></li>
+                        <li><h3><i class="fa-solid fa-circle-check"></i>Elimina sabor y olor</h3></li>
+                        <li><h3><i class="fa-solid fa-circle-check"></i>Filtración por Carbón Activado</h3></li>
+                    </ul>
+                    <a href="./productos.html"><button>Ver más</button></a>
+                </div>
+            </div>
+        </div>
+        <!-- CLIENTES -->
+        <div class="seccion" id="clientes">
+            <h2>Nuestros Clientes</h2>
+            <div id="acordeon">
+                <div>
+                    <img src="https://www.centromedicomaracay.com/assets/images/logo-cmm-1.png" alt="">
+                </div>
+                <div>
+                    <img src="http://maternidadlafloresta.com/wp-content/uploads/2017/03/LOGO-header-MLF-rif.png" alt="">
+                </div>
+                <div>
+                    <img src="http://www.farmarket.com.ve/sitio/wp-content/uploads/2019/09/cropped-01_Portada_ARCO_IRIS_02.png" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- FOOTER -->
+        <div class="seccion" id="footer">
+            <div id="footerInfo">
+                <div id="footerMenu">
+                    <ul class="listStyle">
+                        <li><a href="./Index.html">Home</a></li>
+                        <li><a href="./nosotros.html">Nosotros</a></li>
+                        <li><a href="./nosotros.html">Nuestro Compromiso</a></li>
+                    </ul>
+                    <ul class="listStyle">
+                        <li><a href="./productos.html">Filtración</a></li>
+                        <li><a href="./productos.html">Tratamiento Ecológico</a></li>
+                        <li><a href="./productos.html">Servicios</a></li>
+                    </ul>
+                    <ul class="listStyle">
+                        <li><a href="./contacto.html">Contacto</a></li>
+                        <li><a href="./contacto.html">Soporte</a></li>
+                        <li><a href="./contacto.html">Trabajo</a></li>
+                    </ul>  
+                </div>
+                <div id="redes">
+                    <h5>Encuéntranos en</h5>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"> <i class="fa-brands fa-twitter"></i></a>
+                    <div>
+                        <h5>Suscríbete a nuestro newsletter</h5>
+                        <form action="">
+                            <input type="email" placeholder="tu.mail@dominio.com" id="inputNews">
+                            <button id="botonSus">Suscribir</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div id="copyright">
+                <img src="./img/iso.png" alt="">
+                <span id="footerAqua">aqua</span><span id="footerHealth">health</span> | Copyright 2022
+            </div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
